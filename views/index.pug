@@ -1,0 +1,15 @@
+extends layout
+block content
+    // Blog Entries Column
+    h1.my-4 Blog Post
+    -var ob = JSON.parse(data)
+    -for(var prop in ob)
+        .card.mb-4
+        img.card-img-top(src='https://3.bp.blogspot.com/--C1wpaf_S4M/W7V__10nRoI/AAAAAAAAK24/1NSfapuYSIY0f0wzXY9NgoH0FjQLT07YACKgBGAs/s1600/maxresdefault.jpg' alt='Card image cap')
+        .card-body
+            h2.card-title #{ob[prop].title}
+            p.card-text
+                #{ob[prop].body}
+            a.btn.btn-primary(href='https://bootsnipp.com/fullscreen/6Xa15') Read More &rarr;
+        .card-footer.text-muted
+            | Posted on date('dd mm yyyy')
