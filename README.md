@@ -1,6 +1,8 @@
 # Node Express Blog
-   Pages
-    Home
-    About
-    Contact
+   
+   
+   We have list of pages 
+    1) Home
+    2) About
+    3) Contact
     
